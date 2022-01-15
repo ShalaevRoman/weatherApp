@@ -74,7 +74,7 @@ export default {
     async onChange(event) {
       this.search = event.target.value
       this.loading = true;
-      await this.fetchCities(this.search.toLowerCase());
+      await this.fetchCities(encodeURIComponent(this.search.toLowerCase()));
       this.loading = false;
       this.filterResults();
     },

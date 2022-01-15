@@ -127,6 +127,7 @@ export default {
     this.pressure = this.weatherData.main.pressure
     this.sunrise = this.coordinatesOfSun(this.weatherData.sys.sunrise)
     this.sunset = this.coordinatesOfSun(this.weatherData.sys.sunset)
+    console.log(this.weatherData)
   },
   data() {
     return {
@@ -235,7 +236,7 @@ export default {
   }
 
     .night {
-    background: linear-gradient(170.67deg, #051F71 7.05%, #071C5E 92.95%);
+    background: linear-gradient(170.67deg, #092685 7.05%, #031246 92.95%);
     color: white;
   }
 </style>
